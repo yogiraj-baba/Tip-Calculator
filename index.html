@@ -1,52 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  
-    font-family: 'Shippori Antique', sans-serif;
-  }
-  main{
-    height: 120vh;
-    background-image: linear-gradient(blue, lightblue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  h1{
-    font-size: 50px;
-    color:white;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    text-shadow: 1px 5px 1px black;
-  }
-  
-  div{
-    max-width: 500px;
-    height: auto;
-    padding: 50px;
-    box-shadow: 1px 1px 15px 3px;
-  }
-  
-  label{
-    display: block;
-    margin-top: 20px;
-  
-  }
-  input{
-    width: 400px;
-    padding: 10px 0;
-  }
-  button{
-    border-radius: 10px;
-    padding: 15px 30px;
-    font-size: 15px;
-    border: none;
-    color: white;
-    background: darkblue;
-    box-shadow: 1px 1px 5px 1px white;
-    margin-top: 20px;
-  }
-  
+<html>
+
+<head>
+	<title>Tip Calculator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./style.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<main>
+	<h1>Tip Calculator</h1>
+	<div>
+		<label>Bill Amount</label>
+		<input type="text" id="bill_amount"></input>
+		<br>
+		<label>Tip Percentage</label>
+		<input type="text" id="tip_per"></input>
+		<br>
+		<label>Tip Amount</label>
+		<input type="text" id="tip_amt" disabled></input>
+		<br>
+		<label>Total Billing Amount</label>
+		<input type="text" id="total_bill" disabled></input>
+		<br>
+		<button onclick="calcy()">Calculate</button>
+	</div>
+</main>
+<script src="./script.js"></script>
+</body>
+
+</html>
